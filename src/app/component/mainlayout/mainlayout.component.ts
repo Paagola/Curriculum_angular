@@ -1,24 +1,12 @@
-import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ComponentheaderComponent } from './component/header/componentheader.component';
-import { MainlayoutComponent } from './component/mainlayout/mainlayout.component';
-import { FooterComponent } from './component/footer/footer.component';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [CommonModule, RouterOutlet, NgOptimizedImage, ComponentheaderComponent, MainlayoutComponent, FooterComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: 'app-mainlayout',
+  imports: [],
+  templateUrl: './mainlayout.component.html',
+  styleUrl: './mainlayout.component.css'
 })
-
-export class AppComponent {
-  title = 'cv';
-  nombre = 'Victor Pagola';
-  fecha = new Date();
-  titulo = 'Mi CV de Angular';
-  grado = 'Desarrollo de Aplicaciones Multiplataforma';
+export class MainlayoutComponent {
   texto =
     'Este es el portfolio de proyectos durante el curso de Desarrollo de Aplicaciones Multiplataforma. Durante estos proyectos se han investigado nuevas herramientas y librerías para ofrecer un proyecto más profesional.';
   ciudad = 'Málaga';
@@ -51,5 +39,5 @@ export class AppComponent {
       'Kotlin'
     ]
   ;
-  descripcion_footer = 'Currículum desarrollado con Angular';
+
 }
