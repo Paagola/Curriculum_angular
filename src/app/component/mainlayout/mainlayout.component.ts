@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-mainlayout',
-  imports: [],
+  imports: [NgOptimizedImage],
   templateUrl: './mainlayout.component.html',
   styleUrl: './mainlayout.component.css'
 })
