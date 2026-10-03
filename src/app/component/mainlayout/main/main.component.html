@@ -1,0 +1,43 @@
+<main>
+    <section class="bloque-about">
+      <p class="about">{{ about }}</p>
+      <p class="description_about">{{ description_about }}</p>
+    </section>
+
+    <div class="experiencia">
+      <p class="titulo_experiencia">{{ titulo_experiencia }}</p>
+
+      <div class="item-experiencia">
+        <div class="cabecera-experiencia">
+          <span class="empresa1">{{ empresa1 }}</span>
+          <span class="periodo1">{{ periodo1 }}</span>
+        </div>
+        <p class="puesto1">{{ puesto1 }}</p>
+        <p class="descripcion1">{{ descripcion1 }}</p>
+      </div>
+
+      <div class="item-experiencia">
+        <div class="cabecera-experiencia">
+          <span class="empresa2">{{ empresa2 }}</span>
+          <span class="periodo2">{{ periodo2 }}</span>
+        </div>
+        <p class="puesto2">{{ puesto2 }}</p>
+        <p class="descripcion2">{{ descripcion2 }}</p>
+      </div>
+    </div>
+
+    <div class="formacion">
+      <p class="titulo_formacion">{{ titulo_formacion }}</p>
+      <p class="texto_formacion">{{ texto_formacion }}</p>
+    </div>
+
+    <div class="tecnologias">
+      <p class="titulo_tecno">{{ titulo_tecno }}</p>
+      <div class="array_tecnologias">
+        @for (tecnologia of array_tecnologias; track tecnologia) {
+          <span class="item-tecnologia">{{ tecnologia }}</span>
+        }
+      </div>
+    </div>
+
+  </main>
