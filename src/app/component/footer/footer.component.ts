@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DatePipe } from '@angular/common';
+1
 @Component({
   selector: 'app-footer',
   imports: [DatePipe],
@@ -8,4 +9,5 @@ import { DatePipe } from '@angular/common';
 })
 export class FooterComponent {
   descripcion_footer = 'Currículum desarrollado con Angular';
+  fecha = new Date()
 }
