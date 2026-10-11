@@ -1,12 +1,15 @@
 <aside class="left">
     <p class="ciudad">{{ ciudad }}</p>
-    <p class="telefono">{{ telefono }}</p>
-    <p class="correo_electronico">{{ correo_electronico }}</p>
-    <p class="github">{{ github }}</p>
-    <p class="idiomas">{{ idiomas }}</p>
+    <button class="contacto" (click)="mostrarContacto = !mostrarContacto">Contacto</button>
+    @if (mostrarContacto) {
+        <p class="telefono">{{ telefono }}</p>
+        <p class="correo_electronico">{{ correo_electronico }}</p>
+        <p class="github">{{ github }}</p>
+        <p class="idiomas">{{ idiomas }}</p>
+    }
 
     <img
-      ngSrc="img/angular.webp"
+      [ngSrc]="rutaImagen"
       width="250"
       height="100"
       alt="imagen_angular"

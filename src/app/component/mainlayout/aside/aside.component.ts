@@ -15,4 +15,6 @@ export class AsideComponent {
   correo_electronico = 'victorpagola.w@gmail.com';
   github = 'https://github.com/Paagola';
   idiomas = 'Certificado B1 Cambridge, cursando para nivel B2';
+  mostrarContacto = true;
+  rutaImagen = 'img/angular.webp';
 }

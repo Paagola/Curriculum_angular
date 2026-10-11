@@ -12,3 +12,18 @@ export class ComponentheaderComponent {
   titulo = 'Mi CV de Angular';
   grado = 'Desarrollo de Aplicaciones Multiplataforma';
 }
+
+function mostrarResumen() {
+  // TODO
+  console.log('Mostrando resumen...')
+}
+
+function mostrarProyectos() {
+  // TODO
+  console.log('Mostrando proyectos...');
+}
+
+ function mostrarFormacion() {
+  // TODO
+  console.log('Mostrando formación...');
+} 

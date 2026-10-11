@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AsideComponent } from './aside/aside.component';
 import { MainComponent } from './main/main.component';
@@ -10,6 +10,6 @@ import { MainComponent } from './main/main.component';
   styleUrl: './mainlayout.component.css'
 })
 export class MainlayoutComponent {
-  
+  seccionActiva = input<string>('resumen');
 
 }
